@@ -1,0 +1,55 @@
+/* Customize the body */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Style the hero section */
+.hero {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Style the navigation bar */
+.navbar {
+    background-color: #333;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+    font-weight: bold;
+}
+
+.navbar .nav-link {
+    color: #fff;
+}
+
+/* Style the portfolio section */
+#portfolio {
+    background-color: #f8f8f8;
+    padding: 60px 0;
+}
+
+#portfolio h2 {
+    color: EF6D58;
+}
+
+.card {
+    border: none;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+/* Style the footer */
+footer {
+    background-color: #333333;
+    color: #fff;
+}
