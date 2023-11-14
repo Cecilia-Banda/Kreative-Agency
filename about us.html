@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Kreative Agency</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <style>
+        /* Add your custom CSS here */
+
+        .header {
+            background-color: #050e18;
+            color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .logo-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            margin-right: 10px;
+        }
+
+        .logo h1 {
+            font-size: 1.5em;
+            margin: 0;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .about-link:hover {
+            color: #ebdcc5;
+        }
+
+        .about-section {
+            background-color: #050e18;
+            color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .about-section h2 {
+            font-size: 2em;
+        }
+
+        .about-section p {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+        }
+
+        .container {
+            margin-top: 20px;
+        }
+
+        .footer {
+            background-color: #050e18;
+            color: #fff;
+            padding: 20px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <div class="logo-container">
+            <div class="logo">
+                <img src="logo.jpg" alt="Kreative Agency">
+                <h1>Kreative Agency</h1>
+            </div>
+            <nav class="navbar">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link about-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link services-link" href="#">Our Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="responsive-navbar">
+                    <button class="navbar-toggler" onclick="toggleNavbar()">Menu</button>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- About Us Section -->
+    <div class="about-section">
+        <h2>About Us</h2>
+        <p>We are your dedicated partner in crafting standout portfolios that showcase your talents and achievements. Our mission is to empower individuals and professionals to make a lasting impression with their unique stories.</p>
+    </div>
+
+    <!-- Service Sections -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="service-box">
+                    <h2>Portfolio creation.</h2>
+                    <p>From design to content, we craft portfolios that reflect your unique identity, helping you make a lasting impression in your field.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-box">
+                    <h2>Content development.</h2>
+                    <p>Our team of writers and designers collaborate to create engaging and informative content that tells your story effectively.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-box">
+                    <h2>Personal branding.</h2>
+                    <p>Enhance your personal brand with a cohesive and visually appealing online presence that sets you apart from the competition.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Social media icons using Font Awesome with spacing -->
+                    <a href="#" class="fab fa fa-facebook"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function toggleNavbar() {
+            var navbar = document.querySelector('.navbar');
+            if (navbar.classList.contains('expanded')) {
+                navbar.classList.remove('expanded');
+            } else {
+                navbar.classList.add('expanded');
+            }
+        }
+    </script>
+</body>
+
+</html>
+
+
