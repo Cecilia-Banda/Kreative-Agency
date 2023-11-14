@@ -1,98 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kreative Agency</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <style>
+        /* Add your custom CSS here */
+
+        .header {
+            background-color: #050e18;
+            color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .logo-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            margin-right: 10px;
+        }
+
+        .logo h1 {
+            font-size: 1.5em;
+            margin: 0;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .home-link:hover {
+            color: #ebdcc5;
+        }
+
+        .hero {
+            background-color: #050e18;
+            color: #fff;
+            text-align: center;
+            padding: 150px 20px;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            margin-bottom: 40px;
+        }
+
+        .footer {
+            background-color: #050e18;
+            color: #fff;
+            padding: 20px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+    </style>
 </head>
+
 <body>
 
-<!-- Navigation Bar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Kreative Agency</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="about us.html">About us</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="our service.html">our services</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="contact us.html">Contact</a>
-            </li>
-        </ul>
+    <!-- Header -->
+    <div class="header">
+        <div class="logo-container">
+            <div class="logo">
+                <img src="logo.jpg" alt="Kreative Agency">
+                <h1>Kreative Agency</h1>
+            </div>
+            <nav class="navbar">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link home-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <div class="responsive-navbar">
+                    <button class="navbar-toggler" onclick="toggleNavbar()">Menu</button>
+                </div>
+            </nav>
+        </div>
     </div>
-</nav>
 
-<!-- Hero Section -->
-<header class="hero bg-primary text-white text-center py-5">
-    <div class="container">
-        <h1 class="display-4">Welcome to Kreative Agency</h1>
-        <p class="lead">We Can Help Build Your Dream Portfolio</p>
-        <p class="card-text">Your journey to a standout portfolio begins here. Explore our services, browse our portfolio samples, and start crafting your narrative today.</p>
-    </div>      
-</header>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h1 class="display-4">Welcome to Kreative Agency</h1>
+            <p class="lead">We Can Help Build Your Dream Portfolio</p>
+            <p>Your journey to a standout portfolio begins here. Explore our services, browse our portfolio samples, and start crafting your narrative today.</p>
+            <a href="#portfolio" class="btn btn-light btn-lg">View Portfolio</a>
+        </div>
+    </header>
 
-<!-- Portfolio Section -->
-<section id="portfolio" class="py-5">
-    <div class="container">
-        <h2 class="text-center">About us</h2>
-        <!-- Add your portfolio items here -->
-        <div class="row">
-            <div class="col-lg-4 col-md-6 mb-4">
-                <!-- Card structure for portfolio item -->
-                <div class="card">
-                    <img src="project1.jpg" class="card-img-top" alt="About">
-                    <div class="card-body">
-                        <h5 class="card-title">About</h5>
-                        <img src="images/about us.1jpeg.jpg" class="pic" />
-                        <p class="card-text">An Experience Portfolio Design Agency</p>
-                        <p class="card-text">We are your dedicated partner in crafting standout portfolios that showcase your talents and achievements. Our mission is to empower individuals and professionals to make a lasting impression with their unique stories.</p>
-                        <a href="#" class="btn btn-primary">About Us</a>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-5">
+        <div class="container">
+            <h2 class="text-center">About us</h2>
+            <!-- Add your portfolio items here -->
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <img src="project1.jpg" class="card-img-top" alt="About">
+                        <div class="card-body">
+                            <h5 class="card-title">About</h5>
+                            <img src="images/about us.1jpeg.jpg" class="pic" />
+                            <p class="card-text">An Experience Portfolio Design Agency</p>
+                            <p class="card-text">We are your dedicated partner in crafting standout portfolios that showcase your talents and achievements, Our mission is to empower individuals and professionals to make a lasting impression with their unique stories.</p>
+                            <a href="#" class="btn btn-primary">About Us</a>
+                        </div>
                     </div>
                 </div>
+                <!-- Repeat this card structure for each portfolio item -->
             </div>
-            <!-- Repeat this card structure for each portfolio item -->
+        </div>
+    </section>
+
+    <section id="how-we-work">
+        <h2>How We Work</h2>
+        <div class="work-details">
+            <div class="work-description">
+                <h3><strong>Making Your Projects Look Awesome</strong></h3>
+                <p>Technical support, designing, and presentation</p>
+                <a href="#" class="read-more-button">Read More</a>
+            </div>
+            <ol class="numbered-list">
+                <li>Portfolio Creation</li>
+                <li>Content Development</li>
+                <li>Personal Branding</li>
+            </ol>
+        </div>
+    </section>
+
+    <section id="Our lastest work">
+        <!-- Add your latest work here -->
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Social media icons using Font Awesome with spacing -->
+                    <a href="#" class="fab fa fa-facebook"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                </div>
+            </div>
         </div>
     </div>
-</section>
 
-<section id="how-we-work">
-    <h2>How We Work</h2>
-    <div class="work-details">
-        <div class="work-description">
-            <h3><strong>Making Your Projects Look Awesome</strong></h3>
-            <p>Technical support, designing, and presentation</p>
-            <a href="#" class="read-more-button">Read More</a>
-        </div>
-        <ol class="numbered-list">
-            <li>Portfolio Creation</li>
-            <li>Content Development</li>
-            <li>Personal Branding</li>
-        </ol>
-    </div>
-</section>
-
-<!-- Add the rest of your sections here -->
-
-<!-- Footer -->
-<footer class="bg-dark text-white text-center py-3">
-    <p>&copy; Kreative     Terms of Use       Privacy Policy</p>
-</footer>
-
-<!-- Bootstrap Scripts -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function toggleNavbar() {
+            var navbar = document.querySelector('.navbar');
+            if (navbar.classList.contains('expanded')) {
+                navbar.classList.remove('expanded');
+            } else {
+                navbar.classList.add('expanded');
+            }
+        }
+    </script>
 </body>
+
 </html>
